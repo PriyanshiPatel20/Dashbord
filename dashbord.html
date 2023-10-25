@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+<script type="text/javascript">
+    window.onload = function() {
+        var chart= new CanvasJS.Chart("chartContainer",
+        {
+            title:{
+                text:"Student Average Attendance"
+            },
+            data: [
+                {
+                    type: "column",
+                    dataPoints: [
+
+                    {label: "Sachin", y: 71},
+                    {label: "Dhoni", y: 55},
+                    {label: "Dravid", y: 50 },
+                    {label: "Hardik", y: 65 },
+                    {label: "Virat", y: 90 },
+                    {label: "Gill", y: 28 },
+                    {label: "Rahul", y: 34 },
+                    {label: "Sehwag", y: 14} 
+                    ]
+                },
+               
+            ]
+        });
+        var chart1= new CanvasJS.Chart("chartContainer1",
+        {
+            title:{
+                text: "Average Subject Marks"
+            },
+            data: [
+                {
+                    type: "bar",
+                    dataPoints: [
+
+                    {label: "Science", y: 71},
+                    {label: "Drawing", y: 55},
+                    {label: "English", y: 50 },
+                    {label: "Social Science", y: 65 },
+                    {label: "Maths", y: 95 },
+                    {label: "Gujarati", y: 68 },
+                    {label: "Chemistry", y: 28 },
+                    {label: "Physics", y: 34 },
+                    {label: "Dancing", y: 14} 
+                    ]
+                },
+               
+            ]
+        });
+                var chart3= new CanvasJS.Chart("chartContainer3",
+        {
+            title:{
+                text: "Student Work Contribution during Weekly Activities"
+            },
+            data: [
+                {
+                    type: "pie",
+                    dataPoints: [
+
+                    {label: "Sachin", y: 20},
+                    {label: "Dhoni", y: 10},
+                    {label: "Dravid", y: 5 },
+                    {label: "Hardik", y: 10 },
+                    {label: "Virat", y: 25 },
+                    {label: "Gill", y: 15 },
+                    {label: "Rahul", y: 8 },
+                    {label: "Sehwag", y: 7} 
+                    ]
+                }
+            ]
+        });
+        var chart4= new CanvasJS.Chart("chartContainer4",
+        {
+            title:{
+                text: "Number of students passing per year."
+            },
+            data: [
+                {
+                    type: "line",
+                    dataPoints: [
+
+                    {label: "2015", y: 55},
+                    {label: "2016", y: 60},
+                    {label: "2017", y: 45 },
+                    {label: "2018", y: 35 },
+                    {label: "2019", y: 40 },
+                    {label: "2020", y: 35 },
+                    {label: "2021", y: 55 },
+                    {label: "2022", y: 65}
+                    ]
+                }
+            ]
+        });
+        chart.render();
+        chart1.render();
+        chart3.render();
+        chart4.render();
+    }
+</script>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<body>
+<div class="row">
+    <div class="col-6">
+        <div id="chartContainer" style="height: 300px;"></div>
+    </div>
+    <div class="col-6">
+        <div id="chartContainer4" style="height: 300px;"></div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-6">
+        <div id="chartContainer3" style="height: 300px;">
+    </div>
+    </div>
+    <div class="col-6">
+        <div id="chartContainer1" style="height: 300px;">
+            </div>
+    </div>
+</div>
+</body>
+</html>
